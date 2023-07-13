@@ -5,7 +5,7 @@
 }
 
 body {
-    max-width: 800px;
+    /* max-width: 800px; */
     text-align: center;
 }
 
@@ -35,6 +35,10 @@ p {
     font-size: 18px;
     line-height: 1.4;
     text-align: center;
+}
+.whole-page {
+    position: relative;
+    top: 80px;
 }
 .name {
     font-size: 96px;
@@ -98,7 +102,7 @@ p {
     text-align: center !important;
 }
 .img-fluid {
-    max-width: 50%;
+    max-width: 105%;
     height: auto;
 }
 .avocado-link {
@@ -106,11 +110,20 @@ p {
     border: none !important;
     width: 200px;
     height: 50px;
+    margin-top: -20px;
+}
+.avocado-paragraph {
+    margin-top: -20px !important;
 }
 .weather-link {
     background-color: #0000ff;
     width: 200px;
     height: 50px;
+    margin-top: -20px;
+    margin-bottom: 8px;
+}
+.weather-app {
+    margin-top: 100px !important;
 }
 .hobby-link {
     background-color: #e6560f !important;
@@ -119,17 +132,63 @@ p {
     height: 50px;
 }
 .about-page-images {
-    width: 300px;
+    width: 800px;
 }
 .position-relative {
-    position: relative !important;
-    top: 300px !important;
+    position: relative;
+    top: 300px;
+}
+.position-relative-abt-page {
+    position: relative;
+    top: 80px;
 }
 .about {
-    font-size: 96px !important;
+    font-size: 96px;
 }
 .contact-me {
     position: relative !important;
     top: 120px !important;
     font-size: 48px;
+}
+@media (max-width: 576px) {
+    h1 {
+        font-size: 48px !important;
+        line-height: 1;
+    }
+    h2 {
+        font-size: 48px;
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    }
+    .homepage-img {
+        display: none;
+    }
+    .about-page-images {
+        width: 100% !important;
+    }
+    project-link {
+        display: block;
+        text-align: center;
+        margin: 0 20px;
+    }
+    .weather-link {
+        margin-bottom: 8px;
+    }
+    .img-thumbnail {
+        width: 100%;
+        display: block;
+    }
+}
+@media (min-width: 577) {
+    body {
+        height: 0;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    #contact {
+        display: block;
+    }
 }
